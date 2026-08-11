@@ -2,8 +2,8 @@
 class Ti < Formula
   desc "极简 coding agent —— 一个 loop、三个工具、零运行时 npm 依赖"
   homepage "https://github.com/SeSiTing/ti-agent"
-  url "https://github.com/SeSiTing/ti-agent/releases/download/v0.0.4/ti_0.0.4.tar.gz"
-  sha256 "8a725af854a38aafb6a06f5fcdb1bc2c33304b059573f615a9d09fa92d9edb30"
+  url "https://github.com/SeSiTing/ti-agent/releases/download/v0.0.5/ti_0.0.5.tar.gz"
+  sha256 "a1318d4d24d2af6417b985e2f855f72c263bb9c1c6b457fd67bcb018cc003703"
   license "MIT"
 
   depends_on "node"
