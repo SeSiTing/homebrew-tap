@@ -5,13 +5,13 @@
 class SitiCli < Formula
   desc "个人命令行工具集"
   homepage "https://github.com/SeSiTing/homebrew-siti-cli"
-  version "2.0.40"
+  version "2.0.41"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SeSiTing/siti-cli/releases/download/v2.0.40/siti-cli_2.0.40_darwin_amd64.tar.gz"
-      sha256 "832fd5a5c36e26224548818cc572e597e4b3ae2b27d6b93fd8b118bed67b85b9"
+      url "https://github.com/SeSiTing/siti-cli/releases/download/v2.0.41/siti-cli_2.0.41_darwin_amd64.tar.gz"
+      sha256 "b366f25f95b5e89141c1f9181201431bdca9dbb5f6ffa40fd892b419ad24ad7a"
 
       define_method(:install) do
         bin.install "siti"
@@ -20,8 +20,8 @@ class SitiCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SeSiTing/siti-cli/releases/download/v2.0.40/siti-cli_2.0.40_darwin_arm64.tar.gz"
-      sha256 "107fc345c6fb01c60db6f2ccb4a59f0c5de53409812e50246e5aaa119d0c2ee3"
+      url "https://github.com/SeSiTing/siti-cli/releases/download/v2.0.41/siti-cli_2.0.41_darwin_arm64.tar.gz"
+      sha256 "0ebb528fd450d5de63b3d7dc9e8b89c88c910111fbc860bd1f955dc51148ba54"
 
       define_method(:install) do
         bin.install "siti"
@@ -33,8 +33,8 @@ class SitiCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SeSiTing/siti-cli/releases/download/v2.0.40/siti-cli_2.0.40_linux_amd64.tar.gz"
-      sha256 "1fc9db317e4b6c11dd4b4a7f3f2ef4bcd59b1e8ea46e7e4fd6560935ee5f7a15"
+      url "https://github.com/SeSiTing/siti-cli/releases/download/v2.0.41/siti-cli_2.0.41_linux_amd64.tar.gz"
+      sha256 "3fa786657f24d8175bb958e1128ab9c56302d25856851a82e4448ebef21481c2"
       define_method(:install) do
         bin.install "siti"
         zsh_completion.install "completions/_siti" => "_siti"
@@ -42,8 +42,8 @@ class SitiCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SeSiTing/siti-cli/releases/download/v2.0.40/siti-cli_2.0.40_linux_arm64.tar.gz"
-      sha256 "5a0e57f53b2b87b93739b2a9ac166431a5420ebc921e7393b52edf21cf514881"
+      url "https://github.com/SeSiTing/siti-cli/releases/download/v2.0.41/siti-cli_2.0.41_linux_arm64.tar.gz"
+      sha256 "f8afcf5cd5e07721e1d5276a618b4f9b2e81ecf74c2e62befe4fe9250dea50ed"
       define_method(:install) do
         bin.install "siti"
         zsh_completion.install "completions/_siti" => "_siti"
